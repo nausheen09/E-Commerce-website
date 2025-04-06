@@ -1,0 +1,51 @@
+:root {
+  --bs-blue: #3011BC;
+  --bs-indigo: #0057F2;
+  --bs-purple: #7E11BC;
+  --bs-pink: #F8A2FF;
+  --bs-red: #FF705C;
+  --bs-orange: #FE7A15;
+  --bs-yellow: #FFA15C;
+  --bs-green: #19CC61;
+  --bs-teal: #00D9B0;
+  --bs-cyan: #00A1FC;
+  --bs-white: #FFFEFE;
+  --bs-gray: #9E9E9E;
+  --bs-gray-dark: #616161;
+  --bs-primary: #FFA15C;
+  --bs-secondary: #FE7A15;
+  --bs-success: #19CC61;
+  --bs-info: #00A1FC;
+  --bs-warning: #FFA15C;
+  --bs-danger: #FF705C;
+  --bs-light: #F9FAFD;
+  --bs-dark: #212121;
+  --bs-font-sans-serif: "Jost", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --bs-font-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 254, 254, 0.15), rgba(255, 254, 254, 0));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #424242;
+  background-color: #F5F5F5;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+section {
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
