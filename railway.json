@@ -1,0 +1,16 @@
+{
+    "builds": [
+      {
+        "src": "frontend/package.json",
+        "use": "@railway/node",   
+        "config": {
+          "distDir": "frontend/dist"  
+        }
+      },
+      {
+        "src": "backend/package.json",  
+        "use": "@railway/node"
+      }
+    ]
+  }
+  
