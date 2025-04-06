@@ -12,8 +12,7 @@ const AdminPage = () => {
 				const token = localStorage.getItem('token');
 
 				const response = await fetch(
-					`${import.meta.env.VITE_API_URL}/auth/isAdmin`
-					// 'http://localhost:5000/api/auth/isAdmin'
+					'http://localhost:5000/api/auth/isAdmin'
 					, {
 					method: 'GET',
 					headers: {

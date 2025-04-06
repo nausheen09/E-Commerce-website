@@ -58,15 +58,14 @@ function Signup() {
                                     setLoading(true);
                                     try {
                                         const response = await fetch(
-                                            `${import.meta.env.VITE_API_URL}/auth/signup`
+                                            // `${import.meta.env.VITE_API_URL}/auth/signup`
 
-                                            // 'http://localhost:5000/api/auth/signup'
-                                            
+                                            'http://localhost:5000/api/auth/signup'
                                             , {
-                                            method: 'POST',
-                                            headers: { 'Content-Type': 'application/json' },
-                                            body: JSON.stringify(values),
-                                        });
+                                                method: 'POST',
+                                                headers: { 'Content-Type': 'application/json' },
+                                                body: JSON.stringify(values),
+                                            });
                                         const data = await response.json();
                                         setLoading(false);
                                         if (response.ok) {

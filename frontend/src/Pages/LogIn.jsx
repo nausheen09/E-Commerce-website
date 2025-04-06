@@ -40,8 +40,8 @@ function LogIn() {
 
         try {
             const response = await fetch(
-                 `${import.meta.env.VITE_API_URL}/auth/login`
-                // 'http://localhost:5000/api/auth/login'
+                //  `${import.meta.env.VITE_API_URL}/auth/login`
+                'http://localhost:5000/api/auth/login'
                 , {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
