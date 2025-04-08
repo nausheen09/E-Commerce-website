@@ -19,6 +19,8 @@ import * as Yup from 'yup';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
+const apiUrl = import.meta.env.VITE_API_BASE_URL;
+
 const validationSchema = Yup.object({
     username: Yup.string()
         .matches(/^[a-zA-Z0-9]+$/, 'Username can only contain letters and numbers (No spaces or special characters)')
@@ -58,9 +60,9 @@ function Signup() {
                                     setLoading(true);
                                     try {
                                         const response = await fetch(
-                                            // `${import.meta.env.VITE_API_URL}/auth/signup`
+                                           `${apiUrl}/auth/signup`
 
-                                            'http://localhost:5000/api/auth/signup'
+                                            // 'http://localhost:5000/api/auth/signup'
                                             , {
                                                 method: 'POST',
                                                 headers: { 'Content-Type': 'application/json' },

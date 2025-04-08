@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AdminDashboard from '../Components/AdminDashboard';
 
+const apiUrl = import.meta.env.VITE_API_BASE_URL;
+// console.log(apiUrl)
+
 const AdminPage = () => {
 	const navigate = useNavigate();
 	const [isAdmin, setIsAdmin] = useState(null); // 🔹 null initially to avoid flashing effect
@@ -12,14 +15,15 @@ const AdminPage = () => {
 				const token = localStorage.getItem('token');
 
 				const response = await fetch(
-					'http://localhost:5000/api/auth/isAdmin'
+					`${apiUrl}/auth/isAdmin`
+					// 'http://localhost:5000/api/auth/isAdmin'
 					, {
-					method: 'GET',
-					headers: {
-						'Content-Type': 'application/json',
-						Authorization: `Bearer ${token}`,
-					},
-				});
+						method: 'GET',
+						headers: {
+							'Content-Type': 'application/json',
+							Authorization: `Bearer ${token}`,
+						},
+					});
 
 				const data = await response.json();
 				console.log('Admin Check Response:', data);

@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
-    "bootstrap": "^5.3.3",
+    "axios": "^1.8.4",
+    "bootstrap": "^5.3.5",
+    "bootstrap-icons": "^1.11.3",
     "formik": "^2.4.6",
     "mdb-react-ui-kit": "^9.0.0",
     "react": "^19.0.0",

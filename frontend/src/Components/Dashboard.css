@@ -1,0 +1,31 @@
+#wrapper {
+  min-height: 100vh;
+}
+
+
+.bg-purple {
+  background-color: #6a1b9a !important;
+}
+
+/* Sidebar width and transition */
+#sidebar-wrapper {
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+/* Sidebar hidden (for mobile) */
+.sidebar.hide {
+  margin-left: -250px;
+}
+
+/* On larger screens show by default */
+@media (min-width: 992px) {
+  .sidebar {
+    margin-left: 0 !important;
+  }
+}
+
+/* Page content should adjust */
+#page-content-wrapper {
+  flex: 1;
+}

@@ -20,7 +20,7 @@ export const CustomNavbar = () => {
                         <Nav.Link as={Link} to="/" className="fw-medium active">Home</Nav.Link>
                         <Nav.Link as={Link} to="/Womencollection" className="fw-medium">Women</Nav.Link>
                         <Nav.Link as={Link} to="/MenArrivals" className="fw-medium">Men</Nav.Link>
-                        <Nav.Link as={Link} to="/bestdeals" className="fw-medium">Collection</Nav.Link>
+                        <Nav.Link as={Link} to="/Product" className="fw-medium">Products</Nav.Link>
                         <Nav.Link as={Link} to="/OutletSummer" className="fw-medium">Outlet</Nav.Link>
                         <Nav.Link as={Link} to="/AboutGentle" className="fw-medium">About</Nav.Link>
                     </Nav>

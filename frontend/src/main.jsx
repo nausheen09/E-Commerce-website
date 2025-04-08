@@ -6,7 +6,9 @@ import { ToastContainer } from "react-toastify";
 import { store } from "./store/store.js";
 import App from './App.jsx'
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from "react-redux";
+
 
 
 createRoot(document.getElementById('root')).render(

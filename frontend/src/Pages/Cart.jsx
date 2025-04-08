@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { Button, Card, Row, Col, ListGroup } from 'react-bootstrap'; // React Bootstrap components
 
+const apiUrl = import.meta.env.VITE_API_BASE_URL;
+
 const Product = ({ id, name, price, image, description }) => {
     return (
         <Card className="mb-4 shadow-sm border-0">

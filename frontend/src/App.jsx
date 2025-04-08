@@ -9,12 +9,14 @@ import LogIn from "./Pages/LogIn";
 import LogOut from "./Pages/LogOut";
 import Cart from "./Pages/Cart";
 import AdminPage from "./Pages/AdminPage";
-import BestDealsCarousel from "./Pages/BestDeal";
+// import BestDealsCarousel from "./Pages/BestDeal";
 import WomenCollection from "./Pages/WomenCollection";
 import MenArrivals from "./Pages/MenArrivals";
 import OutletSummer from "./Pages/OutletSummer";
 import AboutGentle from "./Pages/AboutGentle";
 import ContactUs from "./Pages/ContactUs";
+import Products from "./Pages/Products";
+
 
 function App() {
   const location = useLocation();
@@ -36,18 +38,20 @@ function App() {
         <Route path="/logout" element={<LogOut />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/admin" element={<AdminPage />} />
-        <Route path="/bestdeals" element={<BestDealsCarousel />} />
+        {/* <Route path="/bestdeals" element={<BestDealsCarousel />} /> */}
         <Route path="/womencollection" element={<WomenCollection />} />
         <Route path="/menarrivals" element={<MenArrivals />} />
         <Route path="/outletsummer" element={<OutletSummer />} />
         <Route path="/aboutgentle" element={<AboutGentle />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/Product" element={<Products />} />
       </Routes>
 
       {/* Extra Components – only show if NOT on admin, login/signup, OR cart */}
       {!isAdminPage && !isAuthPage && !isCartPage && (
         <>
-          <BestDealsCarousel />
+       
+        
           <WomenCollection />
           <MenArrivals />
           <UrbanStorie />
