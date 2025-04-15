@@ -9,7 +9,7 @@ import userRoutes from "./routers/userRoutes.js"
 import connectToDb from "./db/db.js";
 import cartRoutes from "./routers/cartRoutes.js"
 import productRoutes from "./routers/productRoutes.js";
-
+import contactRoutes from "./routers/contactRoutes.js"
 
 // import productRoutes from "./routers/productRoutes.js"
 app.use(cors({
@@ -22,7 +22,6 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization'],
 }),
 );
-
 
 const __dirname = path.resolve();
 // // Serve static frontend files
@@ -40,6 +39,7 @@ connectToDb()
 app.use("/api/auth", userRoutes);
 app.use("/api/cart", cartRoutes);
 app.use('/api/products', productRoutes);
+app.use('/api/contact', contactRoutes);
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
@@ -47,6 +47,9 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
+
+
+
 
 
 // app.listen(5000, () => {

@@ -46,11 +46,6 @@ export const signup = async (req, res) => {
         error: error.message,
       });
     }
-    // console.error(chalk.bgRed("Signup Error:"), error);
-    // res.status(500).json({
-    //   message: "Internal Server Error",
-    //   error: error.message,
-    // });
 
     res.status(500).json({
       message: "Internal Server Error",
